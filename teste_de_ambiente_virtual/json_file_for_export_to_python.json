@@ -1,0 +1,12 @@
+[
+    {
+      "Linguagem": "Python",
+      "idade": 33,
+      "Uso": "Aplicações Científicas"
+    },
+    {
+      "Linguagem": "JavaScript",
+      "idade": 28,
+      "Uso": "Web, usuários e servidores"
+    }
+  ]

@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Compass",
+    "marca": "Jeep",
+    "ano": 2018,
+    "cor": "Branco P\u00e9rola"
+  },
+  {
+    "nome": "Renegade",
+    "marca": "Jeep",
+    "ano": 2021,
+    "cor": "Preta"
+  },
+  {
+    "nome": "Toro",
+    "marca": "Fiat",
+    "ano": 2021,
+    "cor": "Preta"
+  }
+]

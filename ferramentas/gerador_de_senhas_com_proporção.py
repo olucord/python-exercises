@@ -1,6 +1,6 @@
 """
-Senhas muito grandes, a proporção colocada pode causar confusão. Não colocar
-senhas maiores que 50, por exemplo.
+Senhas muito grandes, a proporção colocada pode causar confusão. 
+Não colocar senhas maiores que 50, por exemplo.
 """
 
 from random import sample # número aleatórios em um intervalo
@@ -13,7 +13,7 @@ numeros = '0123456789' # 20% da senha
 simbolos = '+-*/~^&%$#@!?.>,;:<()_}[]{' # 40% da senha
 
 # Definindo tamanho da senha
-tamanho_da_senha = 50
+tamanho_da_senha = 5
 
 conjunto_vazio = set()
 

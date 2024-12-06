@@ -5,7 +5,7 @@ caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345\
 
 senha = ''
 
-for i in sample(caracteres, 88):
+for i in sample(caracteres, 88): # o máximo são 88 caracteres
     senha += i
 
 print(senha)
