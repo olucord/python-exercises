@@ -6,8 +6,8 @@ Depois, leia o arquivo json que você criou e passe os dados
 para outro arquivo python
 """
 
-# Este arquivo conterá a classe e os dados a serem exportados
-# para json
+# Este arquivo conterá a classe e os dados a serem 
+# exportados para json
 
 class Carro():
     def __init__(self, nome, marca, ano, cor):
@@ -21,7 +21,7 @@ renegade = Carro('Renegade', 'Jeep', 2021, 'Preta')
 toro = Carro('Toro', 'Fiat', 2021, 'Preta')
 
 lista_dicionarios_instancias = [compass.__dict__,\
-     renegade.__dict__,toro.__dict__]
+renegade.__dict__,toro.__dict__]
 
 # print(lista_dicionarios_instancias)
 
