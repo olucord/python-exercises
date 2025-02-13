@@ -1,0 +1,23 @@
+# Só o nome do arquivo irá ignorá-lo em qualquer lugar
+# do repositório, seja na raiz ou subpasta
+
+minha_base_de_dados_mysql/
+.env  
+# O .env ignora qualquer ".env" dentro de curso_python
+
+# Se quiser ignorar em apenas um lugar específico
+# precisamos apontar o caminho completo
+# Ex: minha_base_de_dados_mysql/.env
+
+venv/
+# Ignoramos todas as pastas venv (ambientes virtuais)
+# porém queremos deixar o da pasta "teste_de_ambiente-
+# virtual". Para isso, vamos adicionar uma exclusão
+# a regra acima que exclue todos as pastas venv.
+!teste_de_ambiente_virtual/venv/
+
+# ATENÇÃO: o uso de *!* para ignorar a regra, só funci-
+# ona se o arquivo já estiver no repositório do git, ou
+# seja, se ele já foi "subido"
+
+__pycache__/
