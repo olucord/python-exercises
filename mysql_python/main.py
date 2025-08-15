@@ -1,3 +1,7 @@
+# Precisamos configurar as config do DBeaver para o driver
+# do MySQL onde as chaves "allowPublicKeyRetrieval" tem que
+# ser mudada para True e "useSSL" para false.
+
 import pymysql # vai permitir conectar o Python
 # com a base de dados no servidor MySQL
 # e manipulá-la pelo Python
@@ -9,7 +13,7 @@ import os
 dotenv.load_dotenv() # referencia as variáveis de 
 # ambiente com o módulo os usando o método "environ[V.A]"
 
-TABLE_NAME = 'customers'
+# TABLE_NAME = 'customers'
 
 connection = pymysql.connect(
     host=os.environ['MYSQL_HOST'],
@@ -51,26 +55,26 @@ connection = pymysql.connect(
 
 cursor = connection.cursor()
 
-# cursor.execute(
-#     f'CREATE TABLE buyers ('
-#     'id INT NOT NULL AUTO_INCREMENT, '
-#     'name TEXT NOT NULL, '
-#     'phone INT NOT NULL,'
-#     'city TEXT NOT NULL, '
-#     'PRIMARY KEY (id) '
-#     ')'             
-# )
+cursor.execute(
+    f'CREATE TABLE buyers ('
+    'id INT NOT NULL AUTO_INCREMENT, '
+    'name TEXT NOT NULL, '
+    'phone INT NOT NULL,'
+    'city TEXT NOT NULL, '
+    'PRIMARY KEY (id) '
+    ')'             
+)
 
-# cursor.execute(
-#     f'CREATE TABLE cars ('
-#     'id INT NOT NULL AUTO_INCREMENT, '
-#     'name TEXT NOT NULL, '
-#     'mark TEXT NOT NULL, '
-#     'year INT NOT NULL, '
-#     'color TEXT NOT NULL, '
-#     'PRIMARY KEY (id) '
-#     ')'             
-# )
+cursor.execute(
+    f'CREATE TABLE cars ('
+    'id INT NOT NULL AUTO_INCREMENT, '
+    'name TEXT NOT NULL, '
+    'mark TEXT NOT NULL, '
+    'year INT NOT NULL, '
+    'color TEXT NOT NULL, '
+    'PRIMARY KEY (id) '
+    ')'             
+)
 
 cursor.execute(
     'INSERT INTO buyers '

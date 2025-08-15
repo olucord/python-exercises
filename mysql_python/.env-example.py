@@ -10,8 +10,11 @@
 # o ambiente em que o código ou programa será rodado
 # (configurações do sistema) 
 
-MYSQL_ROOT_PASSWORD='Digite aqui qual a senha de root'   
-MYSQL_DATABASE='Digite aqui qual a base_de_dados'   
-MYSQL_USER='Digite aqui qual o usuario'   
-MYSQL_PASSWORD='Digite aqui qual a senha'   
-MYSQL_HOST='Digite aqui qual o host'
+# Na hora de passar esses códigos, não use as aspas no ar-
+# quivo .env (ele não precisa)
+
+MYSQL_ROOT_PASSWORD='senha de root' # passar sem as 'aspas'   
+MYSQL_DATABASE='base_de_dados'   
+MYSQL_USER='usuario'   
+MYSQL_PASSWORD='senha'
+MYSQL_HOST='host_local_do_seu_computador (127.0.0.1)'

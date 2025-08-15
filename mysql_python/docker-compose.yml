@@ -1,4 +1,4 @@
-version: '3.9'
+# version: '3.9'  -> está obsoleto "passar versão"
 services:
   minha_base_de_dados_mysql:
 # parte adicionada ao criar o arquivo .env (explica no final)    
