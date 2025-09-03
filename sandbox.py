@@ -1,0 +1,1 @@
+# Esse módulo serve para testar rapidamente trechos de código Python
